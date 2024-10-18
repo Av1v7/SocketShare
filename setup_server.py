@@ -117,7 +117,7 @@ class Server:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    server = Server('192.168.1.189', 1999, root) # The IP of the computer that is receiving the files
+    server = Server('192.168.x.x', 1999, root) # The IP of the computer that is receiving the files
     threading.Thread(target=server.start_server).start()
 
     root.mainloop()
